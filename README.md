@@ -1,16 +1,11 @@
 # Budgeting Everything
 
-Financial review dashboard with transaction analysis, refund matching, budget insights, and optional AI summaries.
+I built Budgeting Everything to make spending records easier to inspect and explain. I included transaction filters, merchant and category summaries, refund matching, and optional AI summaries based on calculated results.
 
-## Technology
+I used Next.js, React, and JavaScript. I keep the ledger calculations separate from the optional model calls so totals come from the records rather than generated text.
 
-Next.js, React, JavaScript.
+## Running it
 
-## Run locally
+I install dependencies with `npm ci`, start the app with `npm run dev`, and open `http://127.0.0.1:3000`. The saved review and AI routes are intended for local use.
 
-Use Node.js and npm. Run `npm ci`, then `npm run dev -- -H 127.0.0.1 -p 3000` and open `http://127.0.0.1:3000`. The bundled ledger contains six entirely fictional transactions. The original financial records, receipt pages, review notes, and financial reports are excluded. Optional AI summaries require your own server-side environment settings.
-
-## Portfolio snapshot
-
-This repository contains a source snapshot of a personal project. Personal records, credentials, browser sessions, local databases, and generated output are excluded. Use your own configuration and fictional data when evaluating it. Some integrations require external accounts or additional setup. This is a development project, with feature limitations documented in the source and guides.
-
+I included six completely fictional transactions for demonstration. I left the original financial records, receipts, and review notes out of this repository. Optional AI features require my own server environment settings.
